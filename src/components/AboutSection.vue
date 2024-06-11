@@ -1,180 +1,168 @@
 <template>
-  <div
-    class="section px-8 sm:px-10 lg:px-28 py-10 grid grid-cols-1 md:grid-cols-2"
-  >
-    <div class="bg-orange-600">
-      <div class="pb-5 sm:pb-10 px-8 md:px-28 sm:px-10">
-        <h2 class="text-white font-bold text-center text-lg sm:text-2xl">
-          About Me
-        </h2>
-        <div class="grid md:grid-cols-2 gap-4">
-          <div class="p-5">
-            <div class="flex gap-1 sm:gap-4 justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#fff"
-                  d="m12.89 3l1.96.4L11.11 21l-1.96-.4zm6.7 9L16 8.41V5.58L22.42 12L16 18.41v-2.83zM1.58 12L8 5.58v2.83L4.41 12L8 15.58v2.83z"
-                />
-              </svg>
-              <p class="text-lg sm:text-xl text-center text-white font-serif">
-                Frontend Web Developer
-              </p>
-            </div>
-            <p class="mt-4 text-center opacity-60 text-white">
-              I can use HTML/CSS, Javascript and PHP programming languages. I
-              can also use frameworks such as VueJs, TailwindCSS, and Bootstrap.
-            </p>
-            <div class="justify-center flex gap-2 items-center mt-4 text-white">
-              <a href="#"
-                >See more <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-            </div>
-          </div>
-          <div class="p-5">
-            <div class="flex gap-1 sm:gap-4 justify-center items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="white"
-                  d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4s8-1.79 8-4s-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"
-                />
-              </svg>
-              <p class="text-lg sm:text-xl text-center text-white font-serif">
-                Backend Web Developer
-              </p>
-            </div>
-            <p class="mt-4 text-center opacity-60 text-white">
-              I am a basic Backend Developer and can use tools such as MySQL and
-              Supabase. Can integrate the login system, database, and storage
-              provided by Supabase.
-            </p>
-            <div class="justify-center flex gap-2 items-center mt-4 text-white">
-              <a href="#"
-                >See more <i class="fa-solid fa-arrow-right-long"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="pb-5 sm:pb-10 px-8 md:px-28 sm:px-10">
-        <h2 class="text-white font-bold text-center text-lg sm:text-2xl">
-          Skills
-        </h2>
-        <div
-          class="carousel rounded-box w-full lg:justify-center items-center gap-4 mt-4"
+  <div class="py-10 px-8 sm:px-10 lg:px-40 bg-[#000080]">
+    <h2 class="text-white font-semibold text-center text-lg sm:text-xl">
+      Knowledge:
+    </h2>
+    <div
+      class="carousel rounded-box w-full lg:justify-center items-center gap-4 mt-4"
+    >
+      <div class="carousel-item tooltip tooltip-right" data-tip="HTML5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
         >
-          <div class="carousel-item tooltip tooltip-right" data-tip="HTML5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="m12 17.56l4.07-1.13l.55-6.1H9.38L9.2 8.3h7.6l.2-1.99H7l.56 6.01h6.89l-.23 2.58l-2.22.6l-2.22-.6l-.14-1.66h-2l.29 3.19zM4.07 3h15.86L18.5 19.2L12 21l-6.5-1.8z"
-              />
-            </svg>
-          </div>
-          <div class="carousel-item tooltip tooltip-right" data-tip="CSS3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="m5 3l-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81l-5.48 1.81l-4.75-1.81l.33-1.64H2.85l-.79 4l7.85 3l9.05-3l1.2-6.03l.24-1.21L21.94 3z"
-              />
-            </svg>
-          </div>
-          <div
-            class="carousel-item tooltip tooltip-right"
-            data-tip="Javascript"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="M3 3h18v18H3zm4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87zm5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03z"
-              />
-            </svg>
-          </div>
-          <div class="carousel-item tooltip tooltip-right" data-tip="VueJs">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="M2 3h3.5L12 15l6.5-12H22L12 21zm4.5 0h3L12 7.58L14.5 3h3L12 13.08z"
-              />
-            </svg>
-          </div>
-          <div class="carousel-item tooltip tooltip-right" data-tip="Vite">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 510 512"
-            >
-              <path
-                fill="white"
-                d="M493.89 58.275L355.178 83.558L379.282 0L186.79 37.718l-2.999 50.64L15.145 58.214C3.53 57.538-3.238 65.879 1.558 77.46l244.056 427.983c5.253 8.575 17.347 8.91 22.65 0L507.575 77.419c5.4-9.676-2.874-21.018-13.685-19.144m-237 435.435L17.87 74.556l164.993 29.491l-7.778 131.365l67.632-15.608l-18.858 92.344l51.374-15.608l-25.495 123.397c-1.27 8.069 9.241 12.362 14.44.812l150.22-299.792l-74.135 14.308l10.086-34.962l140.91-25.684z"
-              />
-            </svg>
-          </div>
-          <div
-            class="carousel-item tooltip tooltip-right"
-            data-tip="TailwindCSS"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12"
-              />
-            </svg>
-          </div>
-          <div class="carousel-item tooltip tooltip-left" data-tip="Supabase">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="white"
-                d="M3.084 15.25c-1.664 0-2.6-1.912-1.58-3.226L10.21.806C10.794.054 12 .466 12 1.42v7.33h8.916c1.663 0 2.6 1.912 1.58 3.226L13.79 23.194c-.584.752-1.79.34-1.79-.613V15.25z"
-              />
-            </svg>
-          </div>
-        </div>
+          <path
+            fill="white"
+            d="m12 17.56l4.07-1.13l.55-6.1H9.38L9.2 8.3h7.6l.2-1.99H7l.56 6.01h6.89l-.23 2.58l-2.22.6l-2.22-.6l-.14-1.66h-2l.29 3.19zM4.07 3h15.86L18.5 19.2L12 21l-6.5-1.8z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="CSS3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="m5 3l-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81l-5.48 1.81l-4.75-1.81l.33-1.64H2.85l-.79 4l7.85 3l9.05-3l1.2-6.03l.24-1.21L21.94 3z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="Javascript">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M3 3h18v18H3zm4.73 15.04c.4.85 1.19 1.55 2.54 1.55c1.5 0 2.53-.8 2.53-2.55v-5.78h-1.7V17c0 .86-.35 1.08-.9 1.08c-.58 0-.82-.4-1.09-.87zm5.98-.18c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="NodeJs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="white"
+            d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8c12.3-4.3 14.8-5.2 27.9-12.7c1.4-.8 3.2-.5 4.6.4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6c-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2.7 376.3.7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2m149.1-210.1c0-39.9-27-50.5-83.7-58c-57.4-7.6-63.2-11.5-63.2-24.9c0-11.1 4.9-25.9 47.4-25.9c37.9 0 51.9 8.2 57.7 33.8c.5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6c-52.7 0-84.1 22.2-84.1 59.5c0 40.4 31.3 51.6 81.8 56.6c60.5 5.9 65.2 14.8 65.2 26.7c0 20.6-16.6 29.4-55.5 29.4c-48.9 0-59.6-12.3-63.2-36.6c-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3c0 31.1 16.9 68.2 97.8 68.2c58.4-.1 92-23.2 92-63.4"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="VueJs">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M2 3h3.5L12 15l6.5-12H22L12 21zm4.5 0h3L12 7.58L14.5 3h3L12 13.08z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="Vite">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 510 512"
+        >
+          <path
+            fill="white"
+            d="M493.89 58.275L355.178 83.558L379.282 0L186.79 37.718l-2.999 50.64L15.145 58.214C3.53 57.538-3.238 65.879 1.558 77.46l244.056 427.983c5.253 8.575 17.347 8.91 22.65 0L507.575 77.419c5.4-9.676-2.874-21.018-13.685-19.144m-237 435.435L17.87 74.556l164.993 29.491l-7.778 131.365l67.632-15.608l-18.858 92.344l51.374-15.608l-25.495 123.397c-1.27 8.069 9.241 12.362 14.44.812l150.22-299.792l-74.135 14.308l10.086-34.962l140.91-25.684z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="Express JS">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M24 18.588a1.53 1.53 0 0 1-1.895-.72l-3.45-4.771l-.5-.667l-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92l-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83l3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27c1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.08 4.08 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.42 5.42 0 0 1-2.589 3.957a6.27 6.27 0 0 1-7.306-.933a6.58 6.58 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88 88 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278c-2.882-.04-4.944 2.094-5.071 5.264z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="AlpineJS">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="m24 12l-5.72 5.746l-5.724-5.741l5.724-5.75zM5.72 6.254L0 12l5.72 5.746h11.44z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="TailwindCSS">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-right" data-tip="Bootstrap">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="70"
+          height="70"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M5.423 3.038c-1.284 0-2.233 1.124-2.19 2.342c.04 1.171-.013 2.688-.395 3.924c-.383 1.24-1.03 2.026-2.088 2.127v1.138c1.058.101 1.705.887 2.088 2.127c.382 1.237.435 2.753.394 3.924c-.042 1.218.907 2.342 2.192 2.342h13.154c1.284 0 2.234-1.124 2.192-2.342c-.041-1.171.012-2.687.393-3.924c.384-1.24 1.03-2.026 2.087-2.127v-1.138c-1.058-.101-1.703-.887-2.087-2.127c-.381-1.236-.434-2.753-.393-3.924c.042-1.218-.908-2.342-2.192-2.342zm10.581 11.033c0 1.678-1.251 2.696-3.328 2.696H9.14a.381.381 0 0 1-.382-.381V7.614a.381.381 0 0 1 .382-.38h3.515c1.732 0 2.869.937 2.869 2.378c0 1.01-.765 1.916-1.739 2.074v.053c1.326.145 2.22 1.064 2.22 2.332M12.29 8.442h-2.016v2.848h1.698c1.313 0 2.036-.529 2.036-1.474c0-.885-.622-1.374-1.718-1.374m-2.016 3.977v3.139h2.09c1.367 0 2.09-.549 2.09-1.58c0-1.03-.743-1.559-2.178-1.559z"
+          />
+        </svg>
+      </div>
+      <div class="carousel-item tooltip tooltip-left" data-tip="Supabase">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M3.084 15.25c-1.664 0-2.6-1.912-1.58-3.226L10.21.806C10.794.054 12 .466 12 1.42v7.33h8.916c1.663 0 2.6 1.912 1.58 3.226L13.79 23.194c-.584.752-1.79.34-1.79-.613V15.25z"
+          />
+        </svg>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    aboutMouseEnter() {
+      const linkNav = document.querySelectorAll("#linkNav");
+      linkNav.forEach((link) => {
+        link.classList.remove("text-black");
+        link.classList.add("text-white");
+      });
+    },
+  },
+};
 </script>
 <style lang=""></style>

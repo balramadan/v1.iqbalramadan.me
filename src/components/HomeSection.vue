@@ -1,14 +1,14 @@
 <template>
-  <div class="section px-8 sm:px-10 lg:px-28">
+  <div class="flex h-dvh py-5 md:py-0 px-8 sm:px-10 lg:px-40">
     <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center"
+      class="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 gap-4 xl:gap-40 justify-center items-center"
     >
-      <div class="">
+      <div class="xl:col-span-2">
         <h2 class="text-center sm:text-left items-center">
           Hello, I'm
           <br class="" /><span
             id="auto-text"
-            class="mx-auto sm:mx-0 font-bold text-2xl sm:text-4xl text-orange-600 text-center"
+            class="mx-auto sm:mx-0 font-bold text-2xl sm:text-4xl text-[#000080] text-center"
           ></span>
         </h2>
         <p
@@ -25,42 +25,54 @@
         >
           <a
             href="#contactMe"
-            class="sm:mr-5 mb-2 sm:mb-0 sm:py-2 sm:px-4 border-2 border-orange-600 py-1 px-3 transition-all bg-orange-600 hover:bg-orange-800 rounded text-white"
+            class="sm:mr-5 mb-2 sm:mb-0 sm:py-2 sm:px-4 border-2 border-[#000080] py-1 px-3 transition-all bg-[#000080] hover:bg-blue-950 rounded text-white"
             >Contact Me</a
           >
           <a
             download="CV_Iqbal_Ramadan"
             href="files/Iqbal Ramadan-resumeEN.pdf"
-            class="sm:py-2 sm:px-4 py-1 px-3 border-orange-600 border-solid border-2 transition-all text-orange-600 hover:bg-orange-800 rounded hover:text-white"
+            class="sm:py-2 sm:px-4 py-1 px-3 border-[#000080] border-solid border-2 transition-all text-[#000080] hover:bg-[#000080] rounded hover:text-white"
             >Download CV</a
           >
         </div>
       </div>
-      <div class="order-first md:order-last mx-auto sm:mx-none">
+      <div class="order-first sm:order-last mx-auto">
         <img
-          class="rounded-full h-60 sm:h-80 w-full border border-orange-600"
-          src=" "
-          alt=""
+          class="rounded-full bg-[#000080] h-60 sm:h-80 w-full border border-[#000080]"
+          src="/profile.png"
+          alt="Foto Profile"
         />
       </div>
     </div>
   </div>
 </template>
 <script>
-import Typed from 'typed.js';
+import Typed from "typed.js";
 
 export default {
   mounted() {
-    const typed = new Typed('#auto-text', {
-      strings: ['Iqbal Ramadan', 'Frontend Developer'],
-      typeSpeed: 60,
-      loop: true,
-      loopCount: Infinity,
-      smartBackspace: true,
-      backSpeed: 20,
-      backDelay: 1500,
-    })
-  }
+    this.$nextTick(() => {
+      const typed = new Typed("#auto-text", {
+        strings: ["Iqbal Ramadan", "Frontend Developer"],
+        typeSpeed: 60,
+        loop: true,
+        loopCount: Infinity,
+        smartBackspace: true,
+        backSpeed: 20,
+        backDelay: 1500,
+      });
+    });
+  },
+  methods: {
+    homeMouseEnter() {
+      const linkNav = document.querySelectorAll("#linkNav");
+
+      linkNav.forEach((link) => {
+        link.classList.remove("text-white");
+        link.classList.add("text-black");
+      });
+    },
+  },
 };
 </script>
 <style lang=""></style>
