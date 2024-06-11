@@ -9,7 +9,7 @@
       <div
         v-for="project in projects"
         :key="project.project_id"
-        class="bg-white shadow-lg text-center"
+        class="flex flex-col bg-white shadow-lg text-center justify-between"
       >
         <!-- <iframe :src="project.project_demo" height="200" width="100%" ></iframe> -->
         <img
