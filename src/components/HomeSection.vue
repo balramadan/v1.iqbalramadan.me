@@ -1,9 +1,9 @@
 <template>
   <div class="flex h-dvh py-5 md:py-0 px-8 sm:px-10 lg:px-40">
     <div
-      class="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-3 gap-4 xl:gap-40 justify-center items-center"
+      class="grid grid-cols-1 sm:grid-cols-2  sm:gap-4 xl:gap-40 justify-center items-center"
     >
-      <div class="xl:col-span-2">
+      <div class="">
         <h2 class="text-center sm:text-left items-center">
           Hello, I'm
           <br class="" /><span
@@ -30,7 +30,7 @@
           >
           <a
             download="CV_Iqbal_Ramadan"
-            href="files/Iqbal Ramadan-resumeEN.pdf"
+            href="files/Iqbal-Ramadan-resumeEN.pdf"
             class="sm:py-2 sm:px-4 py-1 px-3 border-[#000080] border-solid border-2 transition-all text-[#000080] hover:bg-[#000080] rounded hover:text-white"
             >Download CV</a
           >
@@ -38,8 +38,8 @@
       </div>
       <div class="order-first sm:order-last mx-auto">
         <img
-          class="rounded-full bg-[#000080] h-60 sm:h-80 w-full border border-[#000080]"
-          src="/profile.png"
+          class="rounded-full bg-[#000080] h-60 sm:h-80 xl:h-96 w-full border border-[#000080]"
+          src="/polo-shirt-profile.jpg"
           alt="Foto Profile"
         />
       </div>
