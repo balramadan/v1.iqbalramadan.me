@@ -4,6 +4,7 @@
       Knowledge:
     </h2>
     <div
+      data-aos="fade-down"
       class="carousel rounded-box w-full lg:justify-center items-center gap-4 mt-4"
     >
       <div class="carousel-item tooltip tooltip-right" data-tip="HTML5">

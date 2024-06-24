@@ -7,16 +7,25 @@
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
       <!-- Card 1 -->
       <div
+        data-aos="zoom-in-up"
         v-for="project in projects"
         :key="project.project_id"
         class="flex flex-col bg-white shadow-lg text-center justify-between"
       >
         <!-- <iframe :src="project.project_demo" height="200" width="100%" ></iframe> -->
-        <img
-          :src="project.project_img"
-          alt="Car View Image"
-          class="object-cover w-full h-48 mx-auto"
-        />
+        <div class="relative">
+          <img
+            :src="project.project_img"
+            alt="Car View Image"
+            class="object-cover w-full h-48 mx-auto"
+          />
+          <div
+            class="absolute bottom-0 right-0 mr-2 mb-2 text-white text-xs text-center bg-black bg-opacity-50 py-2 px-3 rounded"
+          >
+            <p class="text-sm">{{ project.project_tech }}</p>
+          </div>
+        </div>
+
         <div class="pt-5 pb-3 px-3">
           <h3 class="font-bold text-[#000080] text-lg">
             {{ project.project_name }}
@@ -27,6 +36,8 @@
         </div>
         <div class="flex justify-around items-center pb-5 bottom-0">
           <a
+            v-if="project.project_demo"
+            :class="project.project_demo ? 'block' : 'hidden'"
             :href="project.project_demo"
             target="_blank"
             class="text-[#000080] hover:text-[#51829B] transition-all"
@@ -80,7 +91,9 @@ export default {
         .select("*");
 
       if (projects) {
-        this.projects = projects;
+        this.projects = projects.sort((a, b) => {
+          return new Date(b.created_at) - new Date(a.created_at);
+        });
       }
     };
   },
