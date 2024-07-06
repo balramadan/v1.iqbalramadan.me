@@ -15,7 +15,7 @@
         <!-- <iframe :src="project.project_demo" height="200" width="100%" ></iframe> -->
         <div class="relative">
           <img
-            :src="project.project_img"
+            :src="`https://rnjqyqiohdhnlcidizdw.supabase.co/storage/v1/object/public/project/${project.project_img}`"
             alt="Car View Image"
             class="object-cover w-full h-48 mx-auto"
           />
