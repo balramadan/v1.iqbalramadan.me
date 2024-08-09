@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import FullPage from '../views/FullPage.vue'
+import FullPage from '../views/HomePage.vue'
 import AllProjects from '../views/AllProjects.vue'
 import AddProject from '../views/AddProject.vue'
 
